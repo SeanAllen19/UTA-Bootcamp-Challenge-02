@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <nav>
+
+        <div id="logo">
+       <h1> Sean Allen</h1>
+        </div>
+
+        <ul class="list">
+            <li class="link"><a href="#">About Me</a></li>
+            <li class="link"><a href="#">Work</a></li>
+            <li class="link"><a href="#">Contact Me</a></li>
+            <li class="link"><a href="#">Resume</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="image-background">
+        <p>REALLY COOL SUBTITLE HERE</p>
+    </div>
+
+    <main>
+        <div class="about-me">
+            <h1> About Me</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic odit iure ratione. Dolor commodi cumque ipsam suscipit excepturi amet doloremque error? Molestiae dignissimos illo, distinctio similique excepturi laboriosam autem ratione possimus, illum minima debitis repellat, accusamus nam et inventore veritatis eius nobis quam quidem consequuntur.
+                <br>
+                <br>
+            Facilis voluptas eveniet, hic cumque explicabo ducimus rem adipisci optio totam sit qui cupiditate quia dolorem harum facere iste, impedit saepe quis ipsa? Hic sunt blanditiis impedit commodi magni deleniti cum excepturi et molestiae asperiores modi, a eos exercitationem iure esse! Iusto fugiat obcaecati debitis culpa alias error fugit quasi nulla, at incidunt. Obcaecati, ad!
+            </p>
+        </div>
+        
+        <div class="hero-cards">
+
+            <h1>Work</h1>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+       
+        
+    </main>
+
+    <footer>
+        <div class="footer">
+        <h1>Contact</h1>
+        
+        <ul class="list">
+         <li class="link"><a href="#">512-367-3668</a></li>
+         <li class="link"><a href="#">Sallen19.dev@gmail.com</a></li>
+         <li class="link"><a href="#">Github</a></li>
+         <li class="link"><a href="#">IG?</a></li>
+         </ul>
+        </div>
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
